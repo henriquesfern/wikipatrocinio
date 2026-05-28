@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki Edital de Patrocínio CONFEA 2026 - Minuta Final</title>
+    <title>Wiki Edital de Patrocínio 01/2026 - Marco Final V1</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -17,7 +17,6 @@
             --accent: #38bdf8;
             --success: #10b981;
             --danger: #e11d48;
-            --warning: #f59e0b;
             --card-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
         }
 
@@ -42,17 +41,17 @@
         .search-container i { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
 
         nav h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin: 1.5rem 0 0.5rem; }
-        nav a { display: flex; align-items: center; color: #94a3b8; text-decoration: none; padding: 0.7rem 0; font-size: 0.85rem; transition: 0.3s; }
+        nav a { display: flex; align-items: center; color: #94a3b8; text-decoration: none; padding: 0.7rem 0; font-size: 0.9rem; transition: 0.3s; }
         nav a i { margin-right: 12px; width: 20px; text-align: center; }
         nav a:hover { color: var(--accent); transform: translateX(5px); }
 
         /* Main Content */
         main { margin-left: 320px; width: 100%; }
-        .hero { background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600'); background-size: cover; padding: 4rem; color: white; }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1454165833767-027ffea9e787?auto=format&fit=crop&q=80&w=1600'); background-size: cover; padding: 4rem; color: white; }
         
-        .budget-banner { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: -2rem 4rem 2rem; position: relative; z-index: 10; }
+        .budget-banner { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: -2rem 4rem 2rem; position: relative; z-index: 10; }
         .stat-card { background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: var(--card-shadow); border-top: 4px solid var(--secondary); text-align: center; }
-        .stat-card .value { font-size: 1.3rem; font-weight: 700; color: var(--primary); }
+        .stat-card .value { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
 
         .content-wrap { padding: 0 4rem 4rem; }
         section { background: white; padding: 3rem; border-radius: 1rem; margin-bottom: 2.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); scroll-margin-top: 2rem; }
@@ -62,33 +61,38 @@
         h2 { font-size: 1.6rem; color: var(--bg-dark); }
 
         .doc-list { list-style: none; margin-top: 1rem; }
-        .doc-list li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; font-size: 0.9rem; }
+        .doc-list li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; }
         .doc-list li::before { content: "\f00c"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; color: var(--success); }
 
-        table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
         th { background: #f8fafc; text-align: left; padding: 1rem; color: var(--primary); border-bottom: 2px solid #e2e8f0; }
         td { padding: 1rem; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
 
-        .proof-tag { background: #f0fdf4; color: #166534; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.75rem; border: 1px solid #bbf7d0; font-weight: 600; display: inline-block; }
+        details { background: #f8fafc; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #e2e8f0; transition: all 0.3s; }
+        details[open] { background: white; border-color: var(--primary); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        summary { padding: 1.2rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--bg-dark); }
+        summary::after { content: '\f078'; font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 0.8rem; transition: 0.3s; color: var(--primary); }
+        details[open] summary::after { transform: rotate(180deg); }
+        .faq-content { padding: 0 1.2rem 1.2rem; color: #475569; font-size: 0.9rem; border-top: 1px solid #e2e8f0; padding-top: 1rem; line-height: 1.6; }
+
+        .proof-tag { background: #f0fdf4; color: #166534; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.75rem; border: 1px solid #bbf7d0; font-weight: 600; display: inline-block; line-height: 1.2; }
+
         .obj-card { background: #fcfdfe; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-top: 1rem; border-left: 5px solid var(--secondary); }
         .obj-card h4 { color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; }
+        .obj-card h4 i { margin-right: 10px; }
 
-        details { background: #f8fafc; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #e2e8f0; }
-        summary { padding: 1.2rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-        summary::after { content: '\f078'; font-family: "Font Awesome 6 Free"; font-weight: 900; transition: 0.3s; }
-        details[open] summary::after { transform: rotate(180deg); }
-        .faq-content { padding: 0 1.2rem 1.2rem; color: #475569; font-size: 0.9rem; border-top: 1px solid #e2e8f0; padding-top: 1rem; }
+        .contra-sub { color: var(--primary); font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; display: flex; align-items: center; background: #f1f5f9; padding: 0.75rem 1rem; border-radius: 0.5rem; }
+        .contra-sub i { margin-right: 10px; }
 
-        @media (max-width: 1024px) { nav { display: none; } main { margin-left: 0; } .hero, .content-wrap { padding: 2rem; } .budget-banner { margin: 1rem; } }
+        @media (max-width: 1024px) { nav { display: none; } main { margin-left: 0; } .hero, .content-wrap { padding: 2rem; } }
     </style>
 </head>
 <body>
 
 <nav>
     <div class="logo-area">
-        <i class="fa-solid fa-file-signature fa-2x" style="color: var(--accent); margin-bottom: 10px;"></i>
-        <p style="font-weight: 700;">CONFEA WIKI</p>
-        <small style="opacity: 0.7;">Minuta Final 2026/2027</small>
+        <i class="fa-solid fa-layer-group fa-2x" style="color: var(--accent); margin-bottom: 10px;"></i>
+        <p style="font-weight: 700;">CONFEA WIKI 2026</p>
     </div>
 
     <div class="search-container">
@@ -98,29 +102,27 @@
 
     <h2>Navegação</h2>
     <div id="navLinks">
-        <a href="#objetos"><i class="fa-solid fa-box-archive"></i> 01. Objetos</a>
-        <a href="#recursos"><i class="fa-solid fa-coins"></i> 02. Recursos e Limites</a>
-        <a href="#contrapartidas"><i class="fa-solid fa-handshake-angle"></i> 03. Contrapartidas</a>
-        <a href="#tecnico"><i class="fa-solid fa-flask"></i> 04. Elemento Técnico-Científico</a>
-        <a href="#participacao"><i class="fa-solid fa-user-check"></i> 05. Participação</a>
-        <a href="#inscricao"><i class="fa-solid fa-pen-to-square"></i> 06. Inscrição</a>
-        <a href="#documentacao"><i class="fa-solid fa-folder-tree"></i> 07. Documentação</a>
-        <a href="#classificacao"><i class="fa-solid fa-ranking-star"></i> 08. Classificação</a>
-        <a href="#selecao"><i class="fa-solid fa-clipboard-check"></i> 10. Seleção</a>
-        <a href="#contratacao"><i class="fa-solid fa-file-signature"></i> 12. Contratação</a>
-        <a href="#execucao"><i class="fa-solid fa-business-time"></i> 13. Execução</a>
-        <a href="#comprovacao"><i class="fa-solid fa-check-double"></i> 14. Comprovação</a>
-        <a href="#pagamento"><i class="fa-solid fa-money-check-dollar"></i> 15. Pagamento</a>
-        <a href="#cronograma"><i class="fa-solid fa-calendar-days"></i> 17. Cronograma</a>
-        <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+        <a href="#apresentacao"><i class="fa-solid fa-file-invoice"></i> 01. Apresentação</a>
+        <a href="#objetos"><i class="fa-solid fa-shapes"></i> 02. Objetos</a>
+        <a href="#participacao"><i class="fa-solid fa-id-card-clip"></i> 03. Participação</a>
+        <a href="#recursos"><i class="fa-solid fa-coins"></i> 04. Valores e Limites</a>
+        <a href="#cronograma"><i class="fa-solid fa-calendar-check"></i> 05. Cronograma</a>
+        <a href="#documentacao"><i class="fa-solid fa-folder-tree"></i> 06. Documentação</a>
+        <a href="#classificacao"><i class="fa-solid fa-ranking-star"></i> 07. Classificação</a>
+        <a href="#selecao"><i class="fa-solid fa-clipboard-check"></i> 08. Seleção</a>
+        <a href="#contratacao"><i class="fa-solid fa-file-signature"></i> 09. Contratação</a>
+        <a href="#execucao"><i class="fa-solid fa-business-time"></i> 10. Execução</a>
+        <a href="#comprovacao"><i class="fa-solid fa-check-double"></i> 11. Comprovação</a>
+        <a href="#pagamento"><i class="fa-solid fa-money-check-dollar"></i> 12. Pagamento</a>
+        <a href="#contrapartidas"><i class="fa-solid fa-handshake-angle"></i> 13. Contrapartidas</a>
+        <a href="#faq"><i class="fa-solid fa-circle-question"></i> 14. FAQ</a>
     </div>
 </nav>
 
 <main>
     <header class="hero">
-        <h1>Edital de Patrocínio CONFEA</h1>
-        <p><strong>Minuta Final:</strong> Seleção de projetos para o 2º semestre de 2026 e 1º semestre de 2027.</p>
-        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">Base Legal: Lei nº 14.133/2021 | Processo nº 00.002336/2026-54</p>
+        <h1>Edital de Patrocínio nº 1/2026</h1>
+        <p><strong>Marco Final V1:</strong> Guia de referência técnico-jurídica exaustivo para proponentes do Sistema Confea/Crea.</p>
     </header>
 
     <div class="budget-banner">
@@ -129,116 +131,149 @@
             <div class="value">R$ 12.000.000,00</div>
         </div>
         <div class="stat-card">
-            <p style="font-size: 0.75rem; color: #64748b; text-transform: uppercase;">Teto por Evento</p>
-            <div class="value">R$ 80.000,00</div>
-        </div>
-        <div class="stat-card">
-            <p style="font-size: 0.75rem; color: #64748b; text-transform: uppercase;">Teto por Publicação</p>
-            <div class="value">R$ 30.000,00</div>
+            <p style="font-size: 0.75rem; color: #64748b; text-transform: uppercase;">Inscrições</p>
+            <div class="value" style="color: #e11d48;">Até 10/04/2026</div>
         </div>
     </div>
 
     <div class="content-wrap">
         
-        <!-- 01. OBJETOS -->
+        <!-- 01. APRESENTAÇÃO -->
+        <section id="apresentacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-circle-info"></i><h2>01. Apresentação</h2></div>
+            <p>O Confea torna pública a abertura do processo para seleção de projetos de patrocínio no exercício 2026 nas áreas de engenharia, agronomia e geociências.</p>
+        </section>
+
+        <!-- 02. OBJETOS -->
         <section id="objetos" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-box-archive"></i><h2>01. Objetos do Patrocínio</h2></div>
-            <p>Destinado a projetos que estimulem a inovação, atualização técnica e discutam o exercício, regulamentação ou fiscalização profissional (Item 1.1).</p>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                <div class="obj-card">
-                    <h4>Eventos (Presenciais/Híbridos)</h4>
-                    <p style="font-size: 0.85rem;">Congressos, fóruns, hackathons e feiras. Híbridos exigem mín. 20% de público presencial.</p>
-                </div>
-                <div class="obj-card" style="border-left-color: var(--primary);">
-                    <h4>Publicações</h4>
-                    <p style="font-size: 0.85rem;">Livros ou revistas de cunho acadêmico, científico ou tecnológico.</p>
-                </div>
+            <div class="section-header"><i class="fa-solid fa-box-archive"></i><h2>02. Objetos do Patrocínio</h2></div>
+            <p style="margin-bottom: 1.5rem;">Iniciativas que estimulem a inovação, atualização técnica e a geração de conhecimento técnico-científico nas áreas do Sistema profissional.</p>
+            <div class="obj-card">
+                <h4>Eventos (Presenciais ou Híbridos)</h4>
+                <small>Congressos, feiras e hackathons com ritos de participação mínima presencial de 20% no modelo híbrido.</small>
             </div>
-            <div style="background: #fff1f2; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid var(--danger); margin-top: 1rem;">
-                <p style="font-size: 0.85rem; color: #9f1239;"><strong>Vedações:</strong> Projetos de cunho religioso, político-partidário ou que estimulem discriminação e violência (Item 1.7).</p>
+            <div class="obj-card" style="border-left-color: var(--primary);">
+                <h4>Publicações Técnicas</h4>
+                <small>Livros ou revistas de cunho acadêmico/tecnológico. Comercialização vedada pelo item 2.5.</small>
             </div>
         </section>
 
-        <!-- 02. RECURSOS -->
+        <!-- 03. PARTICIPAÇÃO -->
+        <section id="participacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-user-check"></i><h2>03. Quem pode participar</h2></div>
+            <p>Participação restrita a pessoas jurídicas sem fins lucrativos vinculadas ao Sistema Confea/Crea (Entidades de Classe e Instituições de Ensino).</p>
+        </section>
+
+        <!-- 04. VALORES -->
         <section id="recursos" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-money-bills"></i><h2>02. Dos Recursos a Conceder</h2></div>
-            <p>O orçamento total de R$ 12 milhões está distribuído da seguinte forma:</p>
+            <div class="section-header"><i class="fa-solid fa-coins"></i><h2>04. Valores e Limites</h2></div>
             <table>
-                <thead><tr><th>Objeto</th><th>Orçamento Total</th><th>Limite por Projeto</th></tr></thead>
+                <thead><tr><th>Tipo de Objeto</th><th>Teto de Patrocínio (R$)</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Eventos</strong></td><td>R$ 10.000.000,00</td><td>Até R$ 80.000,00</td></tr>
-                    <tr><td><strong>Publicações</strong></td><td>R$ 2.000.000,00</td><td>Até R$ 30.000,00</td></tr>
+                    <tr><td><strong>Evento</strong></td><td>R$ 80.000,00</td></tr>
+                    <tr><td><strong>Publicação (Livro)</strong></td><td>R$ 40.000,00</td></tr>
+                    <tr><td><strong>Publicação (Revista)</strong></td><td>R$ 20.000,00</td></tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 04. ELEMENTO TÉCNICO-CIENTÍFICO -->
-        <section id="tecnico" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-flask"></i><h2>04. Elemento Técnico-Científico</h2></div>
-            <p style="margin-bottom: 1rem;">O patrocínio exige que o projeto contenha atividades que envolvam produção, sistematização ou difusão de conhecimento técnico (Item 4.2).</p>
-            <ul class="doc-list">
-                <li>Palestras, conferências, painéis e seminários técnicos;</li>
-                <li>Artigos técnicos, estudos de caso, manuais e cartilhas;</li>
-                <li>Exposições técnicas e demonstrações de soluções inovadoras;</li>
-                <li>Registros audiovisuais ou repositórios digitais de conteúdo.</li>
-            </ul>
-        </section>
-
-        <!-- 08. CLASSIFICAÇÃO -->
-        <section id="classificacao" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-ranking-star"></i><h2>08. Critérios de Classificação</h2></div>
-            <p style="margin-bottom: 1rem;">A pontuação máxima é de <strong>130 pontos</strong>. Projetos com nota igual ou inferior a 70 pontos são desclassificados.</p>
-            
-            <p style="font-size: 0.9rem; font-weight: 700; color: var(--bg-dark);">Tabela de Cotas por Pontuação (Eventos)</p>
-            <table>
-                <thead><tr><th>Faixa de Pontuação</th><th>Valor da Cota</th></tr></thead>
-                <tbody>
-                    <tr><td>0 a 70 pontos</td><td style="color: var(--danger);">Desclassificado</td></tr>
-                    <tr><td>71 a 80 pontos</td><td>R$ 30.000,00</td></tr>
-                    <tr><td>81 a 90 pontos</td><td>R$ 40.000,00</td></tr>
-                    <tr><td>91 a 100 pontos</td><td>R$ 50.000,00</td></tr>
-                    <tr><td>101 a 110 pontos</td><td>R$ 60.000,00</td></tr>
-                    <tr><td>111 a 120 pontos</td><td>R$ 70.000,00</td></tr>
-                    <tr><td>121 a 130 pontos</td><td>R$ 80.000,00</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- 17. CRONOGRAMA -->
+        <!-- 05. CRONOGRAMA -->
         <section id="cronograma" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-calendar-days"></i><h2>17. Cronograma e Etapas 2026</h2></div>
-            <p style="margin-bottom: 1rem;"><strong>Ciclo Único de Seleção:</strong> Realização do objeto entre 20/07/2026 e 30/06/2027.</p>
+            <div class="section-header"><i class="fa-solid fa-calendar-alt"></i><h2>05. Cronograma 2026</h2></div>
             <table>
-                <thead><tr><th>Etapa</th><th>Período/Data</th></tr></thead>
+                <thead><tr><th>Etapa do Processo</th><th>Período/Data</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Inscrições via Plataforma CNE</strong></td><td><strong>01/06 a 14/06/2026</strong></td></tr>
-                    <tr><td>Classificação e Seleção Técnica</td><td>15/06 a 30/06/2026</td></tr>
-                    <tr><td>Análise de Recursos</td><td>Até 03 dias úteis após divulgação</td></tr>
-                    <tr><td><strong>Divulgação do Resultado Final</strong></td><td><strong>07/07/2026</strong></td></tr>
+                    <tr><td>Período de Inscrição (via CNE)</td><td><strong>23/03 a 10/04/2026</strong></td></tr>
+                    <tr><td>Divulgação do Resultado Estimado</td><td><strong>25/05/2026</strong></td></tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- FAQ -->
+        <!-- 06. DOCUMENTAÇÃO -->
+        <section id="documentacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-file-shield"></i><h2>06. Documentação Obrigatória</h2></div>
+            <p style="font-size: 0.9rem;">Checklist organizado por natureza (Jurídica, Fiscal, Certidões e Declarações). A inobservância implica em inabilitação imediata conforme item 9.2.</p>
+        </section>
+
+        <!-- 07. CLASSIFICAÇÃO -->
+        <section id="classificacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-ranking-star"></i><h2>07. Critérios de Classificação</h2></div>
+            <p style="font-size: 0.9rem;">Avaliação por média ponderada baseada na abrangência do evento (Internacional, Nacional ou Estadual).</p>
+        </section>
+
+        <!-- 08. SELEÇÃO -->
+        <section id="selecao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-clipboard-check"></i><h2>08. Etapa de Seleção</h2></div>
+            <p style="font-size: 0.9rem;">Publicação dos resultados no Portal do Confea, no PNCP e na plataforma CNE conforme item 11.2.</p>
+        </section>
+
+        <!-- 09. CONTRATAÇÃO -->
+        <section id="contratacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-file-signature"></i><h2>09. Da Contratação</h2></div>
+            <p style="font-size: 0.9rem;">Formalização via contrato assinado eletronicamente no SEI. Requer conta corrente exclusiva (Item 12.5).</p>
+        </section>
+
+        <!-- 10. EXECUÇÃO -->
+        <section id="execucao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-business-time"></i><h2>10. Acompanhamento da Execução</h2></div>
+            <p style="font-size: 0.9rem;">Responsabilidade integral do patrocinado. Prazos estritos para convites e provas de marca (Itens 13.3 e 13.4).</p>
+        </section>
+
+        <!-- 11. COMPROVAÇÃO -->
+        <section id="comprovacao" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-file-circle-check"></i><h2>11. Comprovação da Execução</h2></div>
+            <p style="font-size: 0.9rem;">Relatório de Execução e Notas Fiscais enviados via CNE em até 30 dias após o evento (Item 14.2).</p>
+        </section>
+
+        <!-- 12. PAGAMENTO -->
+        <section id="pagamento" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-money-check-dollar"></i><h2>12. Pagamento da Cota</h2></div>
+            <p style="font-size: 0.9rem;">Crédito em conta exclusiva. Opções: Integral (pós-execução) ou Parcelado (50% assinatura / 50% final).</p>
+        </section>
+
+        <!-- 13. CONTRAPARTIDAS DETALHADAS -->
+        <section id="contrapartidas" class="wiki-section">
+            <div class="section-header"><i class="fa-solid fa-star"></i><h2>13. Detalhamento de Contrapartidas</h2></div>
+            <p style="margin-bottom: 1.5rem;">As contrapartidas representam o retorno institucional obrigatório pelo patrocínio (Item 5.6).</p>
+
+            <div class="contra-sub"><i class="fa-solid fa-image"></i> Categoria A: Imagem e Comunicação Institucional</div>
+            <table>
+                <thead><tr><th width="35%">Elemento / Item</th><th>Detalhamento Técnico</th><th width="30%">Comprovação Exigida</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Peças Gráficas (Kit)</strong></td><td>Logo em pastas, canetas, crachás e certificados.</td><td><span class="proof-tag">Fotos/Vídeos do material real</span></td></tr>
+                    <tr><td><strong>Sinalização Local</strong></td><td>Backdrops, painéis LED e totens no local do evento.</td><td><span class="proof-tag">Relatório Fotográfico In-loco</span></td></tr>
+                    <tr><td><strong>Mídia Eletrônica</strong></td><td>Vídeo do evento, banners digitais e posts em perfis institucionais.</td><td><span class="proof-tag">Links, Prints e Relatórios</span></td></tr>
+                </tbody>
+            </table>
+
+            <div class="contra-sub"><i class="fa-solid fa-handshake"></i> Categoria B: Contrapartidas Negociais</div>
+            <table>
+                <thead><tr><th width="35%">Elemento / Item</th><th>Detalhamento Técnico</th><th width="30%">Comprovação Exigida</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Cessão de Estande</strong></td><td>Espaço mín. 9m² mobiliado e adesivado com logo Confea.</td><td><span class="proof-tag">Foto do Estande Montado</span></td></tr>
+                    <tr><td><strong>Vagas/Inscrições</strong></td><td>Cessão de vagas gratuitas para indicação institucional.</td><td><span class="proof-tag">Lista nominal de inscritos</span></td></tr>
+                </tbody>
+            </table>
+            
+            <div style="background: #fff7ed; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid #f97316; margin-top: 1.5rem;">
+                <p style="font-size: 0.85rem; color: #9a3412;"><strong><i class="fa-solid fa-triangle-exclamation"></i> Nota:</strong> A arte gráfica sozinha <strong>não comprova</strong> a execução. É obrigatório evidenciar a contrapartida em uso real.</p>
+            </div>
+        </section>
+
+        <!-- 14. FAQ / PERGUNTAS FREQUENTES -->
         <section id="faq" class="wiki-section">
-            <div class="section-header"><i class="fa-solid fa-circle-question"></i><h2>FAQ / Perguntas Frequentes</h2></div>
-            <details>
-                <summary>Posso vender as publicações patrocinadas?</summary>
-                <div class="faq-content">Não. É expressamente proibida a comercialização de obras patrocinadas pelo Confea (Item 1.8). Elas devem ser cedidas digitalmente para acesso gratuito.</div>
-            </details>
-            <details>
-                <summary>O que define um evento como "Internacional"?</summary>
-                <div class="faq-content">A comprovação de palestrantes ou expositores de, pelo menos, 02 (dois) países distintos (Nota 1, pág 8).</div>
-            </details>
-            <details>
-                <summary>Qual o prazo para a prestação de contas?</summary>
-                <div class="faq-content">Até 30 dias corridos contados do último dia da realização do objeto (Item 14.2).</div>
-            </details>
+            <div class="section-header"><i class="fa-solid fa-circle-question"></i><h2>14. FAQ / Perguntas Frequentes</h2></div>
+            
+            <details><summary>1. Quem pode ser proponente neste edital?</summary><div class="faq-content">Conforme os **Itens 3.1 e 3.2**, Entidades de Classe e Instituições de Ensino sem fins lucrativos vinculadas ao Sistema Confea/Crea.</div></details>
+            <details><summary>2. O Confea pode patrocinar 100% do valor do meu projeto?</summary><div class="faq-content">**Não.** Conforme o **Item 4.6**, é vedado o financiamento integral do projeto.</div></details>
+            <details><summary>3. Qual a regra fundamental para Eventos Híbridos?</summary><div class="faq-content">Conforme o **Item 4.8**, comprovar participação presencial mínima de **20%** do público total estimado.</div></details>
+            <details><summary>4. Posso vender os livros ou revistas patrocinados?</summary><div class="faq-content">**Vedação Crítica:** Conforme o **Item 2.5**, é proibida a comercialização. A distribuição deve ser gratuita.</div></details>
+            <details><summary>5. Onde consulto os resultados oficiais da seleção?</summary><div class="faq-content">Conforme o **Item 11.2**, no site do Confea (área de parcerias) e no **PNCP**.</div></details>
+            <details><summary>6. Qual o prazo fatal para a prestação de contas final?</summary><div class="faq-content">Conforme o **Item 14.2**, até **30 dias corridos** contados do último dia da realização do objeto.</div></details>
         </section>
 
         <footer style="text-align: center; margin-top: 4rem; color: #94a3b8; font-size: 0.8rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;">
-            <p>© 2026 CONFEA - Marco Final V2 (Minuta Final de Documento)</p>
-            <p>Conferência de autenticidade no SEI: Código 1568316 | CRC F7D116AC</p>
+            <p>© 2026 CONFEA - Marco Final V1 (Documento Definitivo)</p>
         </footer>
     </div>
 </main>
